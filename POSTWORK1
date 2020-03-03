@@ -1,0 +1,13 @@
+
+MacBook-Air-de-Maria:~ mariafernandaaguirre$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+MacBook-Air-de-Maria:~ mariafernandaaguirre$ cd desktop
+MacBook-Air-de-Maria:desktop mariafernandaaguirre$ mkdir MiProyecto
+mkdir: MiProyecto: File exists
+MacBook-Air-de-Maria:desktop mariafernandaaguirre$ ls
+BEDU		CursoBD		MiProyecto	VIAJE 2020	peliculas.txt
+CDMX		FER		VALENTINA	hola.txt	solarized
+MacBook-Air-de-Maria:desktop mariafernandaaguirre$ cp /MiProyecto/Kaggle2019
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
