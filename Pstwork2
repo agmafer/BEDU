@@ -1,0 +1,49 @@
+Last login: Mon Mar 23 10:13:34 on ttys004
+l(base) ~
+$ ls
+Applications         Downloads            Music                archivo-CRITERIO.csv movies.csv
+Desktop              Library              Pictures             enter                users-len.csv
+Documents            Movies               Public               miniconda3
+(base) ~
+$ cd Desktop
+(base) ~/Desktop
+$ ls
+BEDU                                                Captura de pantalla 2020-03-19 a la(s) 21.17.51.png
+CDMX                                                FER
+Captura de pantalla 2020-03-02 a la(s) 22.51.53.png MiProyecto
+Captura de pantalla 2020-03-02 a la(s) 22.52.01.png VALENTINA
+Captura de pantalla 2020-03-10 a la(s) 16.03.19.png VIAJE 2020
+Captura de pantalla 2020-03-10 a la(s) 16.08.37.png archivo-CRITERIO.csv
+Captura de pantalla 2020-03-17 a la(s) 19.05.35.png hola.txt
+Captura de pantalla 2020-03-17 a la(s) 19.08.48.png movies.csv
+Captura de pantalla 2020-03-17 a la(s) 19.39.35.png peliculas.txt
+Captura de pantalla 2020-03-19 a la(s) 21.11.30.png resultados.csv
+Captura de pantalla 2020-03-19 a la(s) 21.12.35.png solarized
+(base) ~/Desktop
+$ cd MiProyecto
+(base) ~/Desktop/MiProyecto
+$ ls
+BEDU                         archivo-CRITERIO.csv         ml-1m_2.rar                  resultados.csv
+CursoBedu                    contratacionesabiertas.json  movies.csv                   users.csv
+INSTALL                      contratacionesabiertas3.json movies.dat                   users.dat
+Kaggle2019                   contratacionesabiertas4.json moviesf.csv
+OBRAS.jsON                   ml-1M.zip                    moviesf.numbers
+README                       ml-1m                        ratings.dat
+(base) ~/Desktop/MiProyecto
+$ head movies.dat
+1::Toy Story (1995)::Animation|Children's|Comedy
+2::Jumanji (1995)::Adventure|Children's|Fantasy
+3::Grumpier Old Men (1995)::Comedy|Romance
+4::Waiting to Exhale (1995)::Comedy|Drama
+5::Father of the Bride Part II (1995)::Comedy
+6::Heat (1995)::Action|Crime|Thriller
+7::Sabrina (1995)::Comedy|Romance
+8::Tom and Huck (1995)::Adventure|Children's
+9::Sudden Death (1995)::Action
+10::GoldenEye (1995)::Action|Adventure|Thriller
+head movies.dat
+sed " s / :: /, / g " movies.dat > movies.csv
+grep -a " (2000) " movies.csv | cabeza
+grep -a " (2000) " movies.csv | baño
+grep -a " (2000) " movies.csv > archivo-CRITERIO.csv
+ls
