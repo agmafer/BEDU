@@ -1,0 +1,113 @@
+(base) ~
+$ ls
+Applications         Downloads            Music                archivo-CRITERIO.csv movies.csv
+Desktop              Library              Pictures             enter                users-len.csv
+Documents            Movies               Public               miniconda3
+(base) ~
+$ cd Desktop
+(base) ~/Desktop
+$ ls
+BEDU                                                Captura de pantalla 2020-03-19 a la(s) 21.17.51.png
+CDMX                                                FER
+Captura de pantalla 2020-03-02 a la(s) 22.51.53.png MiProyecto
+Captura de pantalla 2020-03-02 a la(s) 22.52.01.png VALENTINA
+Captura de pantalla 2020-03-10 a la(s) 16.03.19.png VIAJE 2020
+Captura de pantalla 2020-03-10 a la(s) 16.08.37.png archivo-CRITERIO.csv
+Captura de pantalla 2020-03-17 a la(s) 19.05.35.png hola.txt
+Captura de pantalla 2020-03-17 a la(s) 19.08.48.png movies.csv
+Captura de pantalla 2020-03-17 a la(s) 19.39.35.png peliculas.txt
+Captura de pantalla 2020-03-19 a la(s) 21.11.30.png resultados.csv
+Captura de pantalla 2020-03-19 a la(s) 21.12.35.png solarized
+(base) ~/Desktop
+$ cd MiProyecto
+(base) ~/Desktop/MiProyecto
+$ ls
+BEDU                         archivo-CRITERIO.csv         ml-1m_2.rar                  resultados.csv
+CursoBedu                    contratacionesabiertas.json  movies.csv                   users.csv
+INSTALL                      contratacionesabiertas3.json movies.dat                   users.dat
+Kaggle2019                   contratacionesabiertas4.json moviesf.csv
+OBRAS.jsON                   ml-1M.zip                    moviesf.numbers
+README                       ml-1m                        ratings.dat
+(base) ~/Desktop/MiProyecto
+$ cd CursoBedu
+(base) ~/Desktop/MiProyecto/CursoBedu on master*
+$ ls
+MONGODB.htm            README.md              postwork_sesion1.sh
+MONGODB_files          history_gitbash_030320 postwork_sesion2.sh
+(base) ~/Desktop/MiProyecto/CursoBedu on master*
+$ mkdir Introduccion_a_base_de_datos
+(base) ~/Desktop/MiProyecto/CursoBedu on master*
+$ mkdir postwork_sesion3
+(base) ~/Desktop/MiProyecto/CursoBedu on master*
+$ mycli -u root -h ec2-54-213-51-169.us-west-2.compute.amazonaws.com
+cPassword:
+(1045, "Access denied for user 'root'@'189.235.102.127' (using password: YES)")
+(base) ~/Desktop/MiProyecto/CursoBedu on master*
+$ mycli -u root -h ec2-54-213-51-169.us-west-2.compute.amazonaws.com
+bPassword:
+(1045, "Access denied for user 'root'@'189.235.102.127' (using password: YES)")
+(base) ~/Desktop/MiProyecto/CursoBedu on master*
+$ mycli -u root -h ec2-54-213-51-169.us-west-2.compute.amazonaws.com
+ Password:
+mysql 10.1.44-MariaDB-0ubuntu0.18.04.1
+mycli 1.20.1
+Chat: https://gitter.im/dbcli/mycli
+Mail: https://groups.google.com/forum/#!forum/mycli-users
+Home: http://mycli.net
+Thanks to the contributor - Anonymous
+(none)> use maria
+You are now connected to database "maria" as user "root"
+Time: 0.081s
+maria> create table users(
+(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1")
+maria> create table users(
+(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1")
+maria> create table users (
+(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1")
+maria> create table usuarios (
+(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1")
+maria> create table users ( id int clave principal,
+(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'principal,' at line 1")
+maria> table ls
+(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'table ls' at line 1")
+maria> show databases
++--------------------+
+| Database           |
++--------------------+
+| ANDREA             |
+| Adrii_Merlin       |
+| FranciscoGarcia_DB |
+| Jazmin             |
+| LJVM               |
+| Lilia              |
+| ROSS               |
+| Rosalia            |
+| Rosalia_TP         |
+| Sam                |
+| Sergio             |
+| Zamby              |
+| information_schema |
+| janet              |
+| maria              |
+| mysql              |
+| performance_schema |
++--------------------+
+17 rows in set
+Time: 0.098s
+maria> use maria
+You are now connected to database "maria" as user "root"
+Time: 0.301s
+CREAR TABLA de usuarios (  (
+      id int clave principal,
+      genero varchar (2),
+      edad int,
+      ocupacion int,
+      cp varchar (10)) ;
+mostrar tablas ;
+# DEFINIR VARIABLES DE TABLA PELÍCULAS
+crear películas de mesa (
+      id int clave principal,
+      nombre varchar (50),
+      genero varchar (20)) ;
+mostrar tablas ;
+# LEER ARCHICO CSV
